@@ -1,71 +1,77 @@
-This Python script analyzes a dataset containing the ODI (One Day International) cricket statistics of Virat Kohli, one of the finest batsmen in the world. It explores various regression techniques to predict the runs scored by Virat Kohli based on different factors such as balls faced, minutes batted, and boundaries hit.
+**Virat Kohli Performance Prediction Model**
 
-Dataset
-The dataset used for this analysis is stored in the file "Virat_Kohli_odi.csv". It contains the following columns:
+This repository contains Python code to predict the performance of cricketer Virat Kohli using regression models. The code is divided into two parts:
 
-Runs Scored: The total runs scored by Virat Kohli in each ODI match.
-Minutes Batted: The number of minutes Virat Kohli batted in each match.
-Balls Faced: The number of balls faced by Virat Kohli in each match.
-Boundaries: The number of boundaries hit by Virat Kohli in each match.
-Strike Rate: The strike rate of Virat Kohli in each match.
+   Virat-Kohli-Performance-Prediction-Model: Predicts the runs scored by Virat Kohli in an ODI match based on different factors such as balls faced, minutes batted, and        boundaries hit.
 
+   Match-Outcome-Prediction: Predicts whether the match result for a match involving Virat Kohli will be a win or a loss based on his performance statistics.
 
-Features
-Loading and preprocessing the dataset.
-Handling missing values by removing rows with missing values.
-Calculating statistical measures such as mean, median, mode, standard deviation, and variance for each numeric column.
-Performing simple linear regression to predict runs based on balls faced.
-Performing multiple linear regression to predict runs based on minutes batted, balls faced, and boundaries.
-Applying polynomial regression to capture nonlinear relationships between the independent and dependent variables.
-Splitting the dataset into training and testing sets for model evaluation.
-Evaluating the performance of each regression model using the coefficient of determination (R^2 score).
-Predicting the runs scored by Virat Kohli using the trained regression models.
-Visualizing the relationship between runs scored and balls faced, as well as runs scored and minutes batted using scatter plots.
-Dependencies
-The following Python libraries are required to run the script:
+**Dataset**
 
-pandas: Data manipulation and analysis library.
-scikit-learn: Machine learning library for regression models.
-plotnine: Data visualization library based on ggplot2.
-Install the dependencies using the following command:
+   The code uses the "Virat_Kohli_odi.csv" dataset, which contains the ODI statistics of Virat Kohli. The dataset includes the following columns:
 
-bash
-Copy code
-pip install pandas scikit-learn plotnine
-Usage
-Ensure you have Python 3.x installed on your machine.
+    Runs Scored: The total runs scored by Virat Kohli in each ODI match.
+    Minutes Batted: The number of minutes Virat Kohli batted in each match.
+    Balls Faced: The number of balls faced by Virat Kohli in each match.
+    Boundaries: The number of boundaries hit by Virat Kohli in each match.
+    Strike Rate: The strike rate of Virat Kohli in each match.
+    Result: The match result ('w' for win and 'l' for loss).
+    
 
-Clone the repository:
+**Dependencies**
 
-bash
-Copy code
-git clone https://github.com/your_username/cricket-runs-prediction.git
-Navigate to the project directory:
+   The following Python libraries are required to run the code:
 
-bash
-Copy code
-cd cricket-runs-prediction
-Place the "Virat_Kohli_odi.csv" dataset file in the project directory.
+    pandas: Data manipulation and analysis library.
+    scikit-learn: Machine learning library for regression and classification models.
+    plotnine: Data visualization library based on ggplot2.
+    matplotlib: Data visualization library for creating plots.
+    
+   Install the dependencies using the following command:
 
-Run the script:
+    pip install pandas scikit-learn plotnine matplotlib
 
-    python cricket_runs_prediction.py
+**Usage**
 
-The script will load and preprocess the dataset, perform regression analysis using different models, evaluate their performance, and generate scatter plots for visualization.
+   Ensure you have Python 3.x installed on your machine.
 
-Results
-The script will display the statistical measures for each numeric column, the R^2 scores for the regression models, and the predicted runs for a given input. Additionally, two scatter plots will be generated to visualize the relationships between runs scored and balls faced, as well as runs scored and minutes batted.
+   Clone the repository:
 
-Contributing
+    git clone https://github.com/azafar224/Virat-Kohli-Performance-Prediction-Model.git
+    
+   Navigate to the project directory:
+
+    cd Virat-Kohli-Performance-Prediction-Model
+
+   Place the "Virat_Kohli_odi.csv" dataset file in the project directory.
+
+   Run the desired code:
+
+   To predict Virat Kohli's performance, run:
+
+    python Kohli_regression_analysis.py
+    
+   To predict the match outcome, run:
+
+    python  Kohli_logistic_regression_analysis.py
+   
+   The code will load the dataset, preprocess the data, train the regression or classification models, and provide the predictions or match outcomes.
+
+**Results**
+
+ Kohli_Regression_Analysis: The code will display statistical measures for each numeric column, R^2 scores for the regression models, and the predicted runs for a given input. It will also generate scatter plots to visualize the relationships between runs scored and balls faced, as well as runs scored and minutes batted.
+
+ Kohli_Logistic_Regression_Analysis: The code will predict whether the match result for a match involving Virat Kohli will be a win or a loss based on his performance statistics. It will print "Win" or "Loss" for each match outcome and display the accuracy score of the logistic regression model.
+
+**Contributing**
+
 Contributions are welcome! If you encounter any issues or have suggestions for improvements, please open an issue or submit a pull request.
 
-License
-This project is licensed under the MIT License. See the LICENSE file for details.
+**Acknowledgements**
 
-Acknowledgements
 The dataset used in this analysis is sourced from official cricket records. We would like to express our gratitude to the cricket community and statisticians for providing the data.
 
 Contact
-For any questions or inquiries, please contact [your_email@example.com].
+For any questions or inquiries, please contact [ahmadzafar224@gmail.com].
 
-Thank you for using the Cricket Runs Prediction script. May your cricket analytics journey be fruitful and insightful!
+Thank you for using the Kohli Prediction script. May your cricket analytics journey be fruitful and insightful!
